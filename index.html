@@ -2,8 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-s">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Document</title>
+	<!--外联样式-->
+	<!--导入外联<link rel="stylesheet" href="具体位置">-->
+	<link rel="stylesheet" href="./外联样式.css">
+	/*
+	<!--内联样式-->
+	<style>
+		.blue
+		{
+			color:blue;
+		}
+		<!--标签选择器  1在标签选择器中，定义类名用class="类名" 多个标签的类名可以重复因为选择器的目的就是选中多个标签2使用：.类名{声明;}   使用：在段落名称后加“class="类名"”-->
+		
+		#abcd
+		{
+			color:yellow;	
+		}
+		<!--将标记为abcd的文字的颜色设为yellow-->
+		<!--id选择器-->
+
+		<!--标签选择器优先级最低，类型选择器中等，id选择器最高-->
+		<!--内部优先级最高，内联外联同级>
+	</style>
+	*/
+
+	
+
 </head>
 <boby>
 	<h1>
@@ -42,15 +68,36 @@
 	</strong>
 	<!--<img    src=""      alt=""        width=""     height=""    />-->
 	<!--           图片路径     替换文本    图片宽度      图片高度-->
-	<img    src="捕获.PNG"alt="图片没了"width="1000"height="1000"    />
+	<img    src="./捕获.PNG"alt="图片没了"width="1000"height="1000"    />
 	<!--<a href="">   aaa        </a>-->
 	<!--     链接指向   显示文字-->
 	<a href="https://www.qlinkto.cn/camelstore"> aaa </a>
-	<!--<a href="工作簿1.xls"> aaaa </a>  点击后自动下载-->
+	<!--<a href="./工作簿1.xls"> aaaa </a>  点击后自动下载-->
 	<!--<a href=#aaaabbbb> aaa </a>  点击跳转至标记为aaaabbbb处-->
 	<!--<a href="mailto:mr_qinghao@126.com">邮件</a>  发邮件给mr_qinghao@126.com-->
 	<!--<a href="tel:18768108656">电话</a>  打电话给18768108656-->
 	<a href="tel:18768108656">电话</a>
-	<a href="mailto:mr_qinghao@126.com">邮件</a>
+	<a href="mailto:mr_qinghao@126.com">邮件</a>	
+	<aaa>
+		这是红色的字
+	</aaa>
+	<bbb>
+		这是50像素大的字
+	</bbb>
+
+	<h1>
+		小偷诗
+	</h1>
+	<p>
+		马瘦毛长蹄子肥<br/>儿子偷爹不算贼<br/>偷大爷娶了个贼奶奶<br/>娶了大半辈子<br/>谁也没偷着谁
+	</p>
+	<h2 >
+		啥也不是，出门偷不到东西，算丢<br/><br/><br/>
+	</h2>
+	<!--内部样式-->
+	<!--可以使用这种方式设置颜色等<p style=color:具体颜色>aaa</p>优先级最高-->
+	
+
+
 </body>
 </html>
