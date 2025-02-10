@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+	<!--外联样式-->
+	<!--导入外联<link rel="stylesheet" href="具体位置">-->
+	<link rel="stylesheet" href="./外联样式.css">
+	
+	<!--内联样式-->
+	<style>
+		/*
+		.blue
+		{
+			color:blue;
+		}
+		<!--标签选择器  1在标签选择器中，定义类名用class="类名" 多个标签的类名可以重复因为选择器的目的就是选中多个标签2使用：.类名{声明;}   使用：在段落名称后加“class="类名"”-->
+		
+		#abcd
+		{
+			color:yellow;	
+		}
+		<!--将标记为abcd的文字的颜色设为yellow-->
+		<!--id选择器-->
+
+		<!--标签选择器优先级最低，类型选择器中等，id选择器最高-->
+		<!--内部优先级最高，内联外联同级-->
+		*/
+		
+		a:hover
+		{
+			color:red;
+			font-size:50px;
+			cursor:wait;
+		}
+		div:hover
+		{
+			cursor:wait;
+		}
+		div
+		{
+			background:url("./捕获2.png") no-repeat 150px 1850px
+		}
+
+	</style>
+	
+
+	
+
+</head>
+<boby>
+	<div>
+		<h1>
+			<!--这是1级标题-->
+			这是1级标题
+		</h1>
+		<h2 id="aaaabbbb">
+			<!--这是2级标题-->
+			<!--此处被标记为aaaabbbb-->
+			这是2级标题
+		</h2>
+		<h3>
+			<!--这是3级标题-->
+		</h3>
+		<h4>
+			<!--这是4级标题-->
+		</h4>
+		<h5>
+			<!--这是5级标题-->
+		</h5>
+		<h6>
+			<!--这是6级标题-->
+		</h6>
+		<p>
+			<!--这是正文  "<br/>"是换行-->
+			这是正文 
+		</p>
+		<!--正文与其他内容有空行-->
+		<em>
+			<!--这是斜体-->
+			这是斜体
+		</em>
+		<strong>
+			<!--这是加粗-->
+			这是加粗
+		</strong>
+		<!--<img    src=""      alt=""        width=""     height=""    />-->
+		<!--           图片路径     替换文本    图片宽度      图片高度-->
+		<img    src="./捕获.PNG"alt="图片没了"width="1000"height="1000"    />
+		<!--<a href="">   aaa        </a>-->
+		<!--     链接指向   显示文字-->
+		<a href="https://www.qlinkto.cn/camelstore"> aaa </a>
+		<!--<a href="./工作簿1.xls"> aaaa </a>  点击后自动下载-->
+		<!--<a href=#aaaabbbb> aaa </a>  点击跳转至标记为aaaabbbb处-->
+		<!--<a href="mailto:mr_qinghao@126.com">邮件</a>  发邮件给mr_qinghao@126.com-->
+		<!--<a href="tel:18768108656">电话</a>  打电话给18768108656-->
+		<a href="tel:18768108656">电话</a>
+		<a href="mailto:mr_qinghao@126.com">邮件</a>	
+		<aaa>
+			这是红色的字
+		</aaa>
+		<bbb>
+			这是50像素大的字
+		</bbb>
+	
+		<h1>
+			小偷诗
+		</h1>
+		<p>
+			马瘦毛长蹄子肥<br/>儿子偷爹不算贼<br/>偷大爷娶了个贼奶奶<br/>娶了大半辈子<br/>谁也没偷着谁
+		</p>
+		<h2 >
+			啥也不是，出门偷不到东西，算丢<br/><br/><br/>
+		</h2>
+		<!--内部样式-->
+		<!--可以使用这种方式设置颜色等<p style=color:具体颜色>aaa</p>优先级最高-->
+		
+		<p style=font-family:"隶书"><!--设置字体-->
+			我的字体是宋体
+		</p>
+		<p style="text-align:center"><!--设置居中-->
+			我居中
+		</p>
+		<p style="text-align:right"><!--设置右对齐-->	
+			我右对齐
+		</p>	
+		<p style="text-align:left"><!--设置左对齐-->
+			我左对齐
+		</p>
+		<!--对齐按照标签宽度，如没有设置，默认浏览器宽度-->
+		<p style="height:80px"><!--设置标签高度为80像素-->
+			我的标签高度为80
+		</p>
+		<p style="height:80px"><!--设置标签高度为80像素-->
+			我的标签高度为80
+		</p>	
+		<p style="background-color:red"><!--设置标签背景颜色为red-->
+			背景颜色为red
+		</p>
+		<p style="height:80px;line-height:70px;background-color:red">
+			标签背景颜色为red，标签高度为80像素，限制高度为70像素
+		</p>
+		<p style="height:80px;background-color:red;width:800px;line-height:70px">
+			标签背景颜色为red，标签高度为80像素，宽度为800像素,限制高度为70像素
+		</p>
+		<p style="height:80px;background-color:red;width:800px;line-height:70px;text-align:right">
+			标签背景颜色为red，标签高度为80像素，宽度为800像素,限制高度为70像素,右对齐
+		</p>	
+		<p style="height:80px;background-color:red;width:800px;line-height:70px;text-align:center">
+			标签背景颜色为red，标签高度为80像素，宽度为800像素,限制高度为70像素,居中
+		</p>
+		<p style="height:80px;background-color:red;width:800px;line-height:70px;text-align:left">
+			标签背景颜色为red，标签高度为80像素，宽度为800像素,限制高度为70像素,左对齐
+		</p>
+		<p style="height:80px;line-height:70px;background-color:red;text-decoration:underline">
+			标签背景颜色为red，标签高度为80像素，限制高度为70像素,下换线
+		</p>
+		<p style="height:80px;line-height:70px;background-color:red;text-decoration:line-through">
+			标签背景颜色为red，标签高度为80像素，限制高度为70像素,中划线
+		</p>
+		<p style="height:80px;line-height:70px;background-color:red;text-decoration:overline">
+			标签背景颜色为red，标签高度为80像素，限制高度为70像素,上划线
+		</p>
+		<p style="height:80px;line-height:70px;background-color:red;text-decoration:underline green">
+			标签背景颜色为red，标签高度为80像素，限制高度为70像素,下换线(绿)
+		</p>
+		<p style="height:80px;line-height:70px;background-color:red;text-decoration:line-through green">
+			标签背景颜色为red，标签高度为80像素，限制高度为70像素,中划线(绿)
+		</p>
+		<p style="height:80px;line-height:70px;background-color:red;text-decoration:overline green">
+			标签背景颜色为red，标签高度为80像素，限制高度为70像素,上划线(绿)
+		</p>
+		<a href="mailto:mr_qinghao@126.com"style="text-decoration:none">邮件,无划线</a>
+		<p style="text-decoration:overline green">
+			上划线(绿)
+		</p>
+		<ul type="">
+			<li>我是无序列表的一项</li>
+			<li>我也是无序列表的一项</li>
+		</ul>
+	</div>
+
+</body>
+</html>
